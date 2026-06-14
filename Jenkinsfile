@@ -32,13 +32,13 @@ pipeline {
                 echo 'WAR Artifact Created Successfully!'
             }
         }
-//         stage('Build & Tag Docker Image') {
-//             steps {
-//                 echo 'Building Docker Image with Tags...'
-//                 sh "docker build -t satyam88/booking-ms:latest -t booking-ms:latest ."
-//                 echo 'Docker Image Build Completed!'
-//             }
-//         }
+        stage('Build & Tag Docker Image') {
+            steps {
+                echo 'Building Docker Image with Tags...'
+                sh "docker build -t satyam88/booking-ms:latest -t booking-ms:latest ."
+                echo 'Docker Image Build Completed!'
+            }
+        }
 //         stage('Docker Image Scanning') {
 //             steps {
 //                 echo 'Scanning Docker Image with Trivy...'
